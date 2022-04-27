@@ -1,3 +1,9 @@
 function sumSalary(salaries) {
-  // ваш код...
+  let summ = 0;
+  for(let key in salaries){
+	  if(Number(salaries[key])&&isFinite(salaries[key])){
+		  summ+=salaries[key]
+	  }
+  }
+  return summ
 }
