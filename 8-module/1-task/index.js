@@ -44,8 +44,7 @@ export default class CartIcon {
 
   updatePosition() {
 if(this.elem.offsetWidth!==0){
-  let elem = this.elem.getBoundingClientRect().top
-    let cord = elem + window.pageYOffset;
+    let cord = this.elem.getBoundingClientRect().top;
     if (document.documentElement.clientWidth <= 767) {
       Object.assign(this.elem.style, {
         position: "",
